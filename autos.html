@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>autos.html</title>
+<style type="text/css">
+#contenedor {
+	position: relative;
+	height: 557px;
+	width: 900px;
+	left: 100px;
+}
+#encabezado {
+	background-color: #066;
+	position: absolute;
+	height: 238px;
+	width: 850px;
+	left: 143px;
+	top: 25px;
+	color: white;
+	text-align: center;
+	font-size: 24px;
+	padding-top: 100px;
+}
+#menu {
+	background-color: #933;
+	position: absolute;
+	height: 288px;
+	width: 269px;
+	left: 143px;
+	top: 263px;
+	color: white;
+	padding: 10px;
+}
+#contenido {
+	background-color: #0C9DB1;
+	position: absolute;
+	height: 287px;
+	width: 578px;
+	left: 413px;
+	top: 263px;
+	color: white;
+	padding: 10px;
+}
+
+#menu a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	margin: 10px 0;
+	font-weight: bold;
+}
+   
+img {
+	width: 150px;
+	display: none;
+	margin: 10px 10px 0 0;
+}
+</style>
+
+<script type="text/javascript">
+function mostrar(id) {
+	document.getElementById(id).style.display = 'inline';
+}
+function ocultar(id) {
+	document.getElementById(id).style.display = 'none';
+}
+</script>
+</head>
+
+<body>
+<div class="contenedor">
+  <div id="encabezado">CONCESIONARIO MUÑES</div>
+  
+  <div id="menu">
+    MENÚ DEL SITIO
+    <a href="index.html">Página principal</a>
+    <a href="autos.html">Autos</a>
+    <a href="contacto.html">Contacto</a>
+  </div>
+
+  <div id="contenido">
+    <h3>Galería de Autos</h3>
+    <p>Pasa el mouse sobre cada texto para ver la imagen:</p>
+    
+    <p onmouseover="mostrar('img1')" onmouseout="ocultar('img1')">Auto Deportivo</p>
+    <img id="img1" src="auto1.jpg" alt="Auto 1" />
+
+    <p onmouseover="mostrar('img2')" onmouseout="ocultar('img2')">Camioneta</p>
+    <img id="img2" src="auto2.jpg" alt="Auto 2" />
+
+    <p onmouseover="mostrar('img3')" onmouseout="ocultar('img3')">Clásico</p>
+    <img id="img3" src="auto3.jpg" alt="Auto 3" />
+  </div>
+
+</body>
+</html>
+
